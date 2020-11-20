@@ -1,0 +1,13 @@
+body {
+    font-family: Palatino;
+  }
+  
+  #form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .form-item {
+    margin-right: 1.8rem;
+  }
