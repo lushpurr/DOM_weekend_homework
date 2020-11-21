@@ -8,39 +8,46 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Favourite Breakfast Foods</h1>
+   <div id="title-container">
+       <div id="twin-peaks"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Twin_Peaks_title.svg/1598px-Twin_Peaks_title.svg.png" alt="twin peaks logo"></div>
+    </div>
+    <h1>WHAT'S FOR BREAKFAST?</h1> 
+
     <form id="breakfast-form">
         <div id="form-wrapper">
             <div class="form-item">
-                <label for="firstFood" class="food">Enter first breakfast food:</label>
+                <label for="firstFood" class="food">What flavour of pie do you want?</label>
                 <input type="text" id="firstFood" required/>
             </div>
         
         
             <div class="form-item">
-                <label for="secondFood" class="food">Enter second breakfast food:</label>
+                <label for="secondFood" class="food">Anything else?</label>
                 <input type="text" id="secondFood" required/>
             </div>
         
             <div class="form-item">
-                <label for="sauce" class="food">Pick a sauce:</label>
+                <label for="sauce" class="food">Cuppa Joe</label>
                 <select id="sauce">
-                    <option value="" disabled selected>What sauce do you want?</option>
-                    <option value="brown sauce">Brown Sauce</option>
-                    <option value="tomato sauce">Tomato Sauce</option>
-                    <option value="chilli sauce">Chilli Sauce</option>
+                    <option value="" disabled selected>How would you like your coffee?</option>
+                    <option value="With cream">With cream</option>
+                    <option value="Black">Black</option>
+                    <option value="Damn fine">Damn fine</option>
+                    <option value="Darker than a moonless night">Darker than a moonless night</option>
                 </select>
             </div>
         </div>
 
         <input type="submit" value="CHOW DOWN!" />
+        <button id= "delete-all">DELETE ALL</button>
 
         
     </form>
 
 
-    <h1>Breakfast Choices</h1>
+    <h1>BREAKFAST CHOICES</h1>
     <ul id="breakfast-list"></ul>
     
+
 </body>
 </html>

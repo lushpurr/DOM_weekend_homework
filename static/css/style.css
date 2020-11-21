@@ -1,7 +1,59 @@
-body {
-    font-family: Palatino;
-  }
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+head{
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #51423d;
+  -webkit-text-stroke: 1px #74CC71;
   
+
+}
+
+
+#twin-peaks {
+  padding: 0;
+  margin: 0;
+}
+body {
+   background-image: url("https://wallpapertag.com/wallpaper/full/9/f/d/158238-large-twin-peaks-wallpaper-1920x1080-phone.jpg");  
+      /* background-image: url(http://getwallpapers.com/wallpaper/full/1/1/8/178947.jpg); */
+   background-size: auto;
+    font-family: Palatino;
+    background-size: auto;
+    color: antiquewhite;
+    padding: 0;
+    margin: 0;
+};
+
+body img{
+  padding: 0;
+  margin: 0;
+}
+  
+#title-container {
+    position: left;
+}
+
+#twin-peaks img{
+padding: 0;
+margin: 0;
+  width: 50%;
+}
+
+.top-left-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
   #form-wrapper {
     width: 100%;
     display: flex;
@@ -11,3 +63,16 @@ body {
   .form-item {
     margin-right: 1.8rem;
   }
+
+
+  li.breakfast-list-item{ /* couldn't use class here? */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border:solid;
+    border-color:  #74CC71;
+    background-color:  #51423d;
+    opacity: 0.7;
+    border-width: 5px;
+    padding:10px;
+  } 
