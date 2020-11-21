@@ -4,50 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/image.css">
     <script src="js/app.js"></script>
-    <title>Document</title>
+    <title>Double R Diner</title>
 </head>
 <body>
    <div id="title-container">
        <div id="twin-peaks"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Twin_Peaks_title.svg/1598px-Twin_Peaks_title.svg.png" alt="twin peaks logo"></div>
+
+        <div id="double-r-logo-container">
+            <div id="double-r-logo">
+                <img src="static/images/twin-peaks-double-r.png" alt="double R Diner Logo">Diner
+            </div>
+        </div>
     </div>
+
+    <div id="main-content">
     <h1>WHAT'S FOR BREAKFAST?</h1> 
 
     <form id="breakfast-form">
         <div id="form-wrapper">
             <div class="form-item">
-                <label for="firstFood" class="food">What flavour of pie do you want?</label>
+                <label for="firstFood" class="food">What flavour of pie would you like?</label>
                 <input type="text" id="firstFood" required/>
             </div>
         
-        
             <div class="form-item">
-                <label for="secondFood" class="food">Anything else?</label>
-                <input type="text" id="secondFood" required/>
-            </div>
-        
-            <div class="form-item">
-                <label for="sauce" class="food">Cuppa Joe</label>
-                <select id="sauce">
+                <label for="coffee" class="food">Coffee:</label>
+                <select id="coffee">
                     <option value="" disabled selected>How would you like your coffee?</option>
-                    <option value="With cream">With cream</option>
-                    <option value="Black">Black</option>
-                    <option value="Damn fine">Damn fine</option>
-                    <option value="Darker than a moonless night">Darker than a moonless night</option>
+                    <option value="creamy">With cream</option>
+                    <option value="black">Black</option>
+                    <option value="DAMN FINE">Damn fine</option>
+                    <option value="darker than a moonless night">Darker than a moonless night</option>
                 </select>
             </div>
+            <div class="form-item">
+                <label for="topping" class="food">Topping:</label>
+                <input type="radio" id="maple-syrup" name="topping" value="maple Syrup">
+                <label for="maple-syrup">Maple Syrup</label>
+                <input type="radio" id="whipped-cream" name="topping" value="whipped Cream">
+                <label for="whipped-cream">Whipped Cream</label>
+            </div>
+
+            <div class="form-item">
+            <input type="reset" value="Clear Choices">
+            <input type="submit" value="Let's eat!"/>
+            <button id= "delete-all">Cancel Order</button>
+            </div>
         </div>
-
-        <input type="submit" value="CHOW DOWN!" />
-        <button id= "delete-all">DELETE ALL</button>
-
-        
     </form>
 
 
     <h1>BREAKFAST CHOICES</h1>
     <ul id="breakfast-list"></ul>
-    
+    </div>
 
 </body>
 </html>

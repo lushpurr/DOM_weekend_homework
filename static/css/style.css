@@ -1,52 +1,51 @@
 * {
   padding: 0;
-  margin: 0;
+  margin-top: 0;
 }
 
-
-head{
-  padding: 0;
-  margin: 0;
+#title-container {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  position: left;
 }
+
 
 h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #51423d;
   -webkit-text-stroke: 1px #74CC71;
+  padding-top: 30px;
+  margin-left: 90px;
   
 
 }
 
 
-#twin-peaks {
-  padding: 0;
-  margin: 0;
-}
 body {
+
    background-image: url("https://wallpapertag.com/wallpaper/full/9/f/d/158238-large-twin-peaks-wallpaper-1920x1080-phone.jpg");  
       /* background-image: url(http://getwallpapers.com/wallpaper/full/1/1/8/178947.jpg); */
    background-size: auto;
-    font-family: Palatino;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: bottom;
+   
+    font-family: Arial, Helvetica, sans-serif;
     background-size: auto;
     color: antiquewhite;
     padding: 0;
-    margin: 0;
 };
 
-body img{
-  padding: 0;
-  margin: 0;
+#main-content{
+  width:70%;
+  margin:auto;
 }
-  
-#title-container {
-    position: left;
-}
+/* images */
 
-#twin-peaks img{
-padding: 0;
-margin: 0;
-  width: 50%;
-}
+
 
 .top-left-text {
   position: absolute;
@@ -55,20 +54,21 @@ margin: 0;
 }
 
   #form-wrapper {
-    width: 100%;
+    margin-left: 100px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   
   .form-item {
     margin-right: 1.8rem;
+    padding: 10px;
   }
 
 
   li.breakfast-list-item{ /* couldn't use class here? */
-    width: 25%;
+    width:90%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     border:solid;
     border-color:  #74CC71;
     background-color:  #51423d;
@@ -76,3 +76,7 @@ margin: 0;
     border-width: 5px;
     padding:10px;
   } 
+
+  #breakfast-list{
+    margin-left: 100px;
+  }

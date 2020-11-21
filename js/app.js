@@ -4,8 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const newBreakfastChoice = document.querySelector('#breakfast-form');
     newBreakfastChoice.addEventListener('submit', handleBreakfastChoiceSubmit)
 
+
     const deleteAllButton = document.querySelector('#delete-all');
     deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
 
 
     });
@@ -30,18 +32,22 @@ const createBreakfastListItem = function (form) {
 
     const firstFood = document.createElement('h3');
     console.log(firstFood);
-    firstFood.textContent = form.firstFood.value; // tried to use first-food here as id and didnt like it
+    // firstFood.textContent = form.firstFood.value; // tried to use first-food here as id and didnt like it
     breakfastListItem.appendChild(firstFood); // appends first food <h3>firstFood</h3> to li
 
-    const secondFood = document.createElement('h3');
-    console.log(secondFood);
 
-    secondFood.textContent = form.secondFood.value;
-    breakfastListItem.appendChild(secondFood);
+    const coffee = document.createElement('h3');
+    // coffee.textContent = form.coffee.value;
+    breakfastListItem.appendChild(coffee);
 
-    const sauce = document.createElement('h3');
-    sauce.textContent = form.sauce.value;
-    breakfastListItem.appendChild(sauce);
+
+    const topping = document.createElement('h3');
+    // topping.innerText =  form.topping.value;
+    breakfastListItem.appendChild(topping);
+
+    const order = document.createElement('p');
+    order.innerText = ` Your order is ${this.firstFood.value} pie with ${form.topping.value} on top, and a cup of ${this.coffee.value} coffee!`;
+    breakfastListItem.append(order);
 
     return breakfastListItem;
 

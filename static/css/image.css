@@ -1,0 +1,27 @@
+
+
+body img{
+    padding: 0;
+    margin: 0;
+  }
+    
+  
+  
+  #twin-peaks img{
+  padding: 0;
+  margin: 0;
+    height: 150px;
+  }
+  
+  #double-r-logo img{
+    height: 100px;
+    background-color: #74CC71;
+    opacity: 0.8;
+  };
+  
+  #double-r-logo-container{
+    display: flex;
+    justify-content:  center;
+  };
+  
+  
