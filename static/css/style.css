@@ -43,10 +43,14 @@ body {
   width:70%;
   margin:auto;
 }
-/* images */
+/* buttons */
+#delete-all {
+  margin-left: 120px;
+}
 
 
 
+/* */
 .top-left-text {
   position: absolute;
   top: 8px;

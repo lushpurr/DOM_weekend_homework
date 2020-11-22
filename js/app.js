@@ -9,8 +9,40 @@ document.addEventListener('DOMContentLoaded', () => {
     deleteAllButton.addEventListener('click', handleDeleteAllClick);
 
 
+    // search
+    const searchBox = document.querySelector('#search');
+    searchBox.addEventListener('submit', handleSearchSubmit);
+
+
 
     });
+
+const handleSearchSubmit = function(event) {
+    const searchResults = document.querySelector('#breakfast-list');
+    // (1) Wait for page to be fully loaded
+window.addEventListener("load", function(){
+    // (2) Attach key up listener to the search box
+    document.getElementById("search").addEventListener("keyup", function(){
+      // (3) Get the search term
+      var search = this.value.toLowerCase();
+  
+      // (4) Get all list items
+      var all = document.querySelectorAll("#breakfast-list")
+  
+      // (5) Loop through list items
+      // * Show only items that match search term
+      for (let i of all) {
+        let item = i.innerHTML.toLowerCase();
+        if (item.indexOf(search) == -1) {
+          i.classList.add("hide");
+        } else {
+          i.classList.remove("hide");
+        }
+      }
+    });
+  });
+}
+
 const handleDeleteAllClick = function(event) {
     const breakfastList = document.querySelector('#breakfast-list');
     breakfastList.innerHTML = '';
